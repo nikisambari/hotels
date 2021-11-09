@@ -1,0 +1,56 @@
+
+
+@media only screen and (max-width: 720px){
+    .navbar{
+    z-index: 9999;
+   }
+  .navbar .nav-menu{
+    display: none;
+    
+  }
+  .navbar .mobile-view{
+    display: block;
+    width:100%;
+    height:auto;
+    position: fixed ;
+    left:0;
+    bottom:0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 1;
+  }
+  .navbar .mobile-tab{
+   width: 95%;
+   margin: 10px;
+   background:#fff;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   padding: 5px;
+   border-radius: 10px; 
+   box-shadow: rgb(38, 57, 77) -10px 30px 20px 0;
+  
+  
+  }
+  .navbar .mobile-tab li{
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+    list-style-type: none;  
+
+  }
+  .navbar .mobile-tab li a{
+    font-size:.8rem;
+    text-decoration: none;
+    color:#4169e1;
+    text-align: center;
+    text-decoration: none;
+
+  }
+  .material-icons{
+    vertical-align: middle;
+  }
+
+
+}

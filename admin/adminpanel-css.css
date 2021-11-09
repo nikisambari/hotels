@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    body{
+      font-family: Poppins;
+      margin: 0;
+      padding: 0;
+      animation: fadeInAnimation ease 2s;
+    }
+    @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+       }
+    }
+
+
+    .material-icons{
+        vertical-align: middle;
+      }
+.navigation{
+    top:0;
+    width:100%;
+    background: #fff;
+    position: fixed;  
+    z-index: 9999;
+    border-bottom: 2px solid #dae3ff;
+} 
+.navbar{
+    top:0;
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+  
+  }
+  .navbar .nav-menu{
+    flex: 1;
+    text-align: right;
+  
+  
+  }
+  .navbar .nav-menu li{
+    display: inline-block;
+    margin: 0 20px;
+    border-radius: 15px;
+    padding:10px;
+  }
+  .navbar .nav-menu li a{
+    font-family: Poppins;
+    text-decoration: none;
+    color:#4169e1;
+    font-size: 1rem;
+    font-weight: 600;
+    }
+ 
+  .navbar .logo{
+    
+    display: flex;
+  }
+  .navbar .logo h1{
+    font-size: 1.4rem;
+    font-family: Galada;
+    color:#4169e1;
+  }
+  
+  .mobile-view{
+    display: none;
+  }
+
+ 
+  .container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    
+ }
+ 
+
+ 
+ 
+
+ 
+      
+
+@media only screen and (max-width: 720px){
+   
+    .navbar{
+      z-index: 9999;
+     }
+    .navbar .nav-menu{
+      display: none;
+      
+    }
+    .navbar .mobile-view{
+      display: block;
+      width:100%;
+      height:auto;
+      position: fixed ;
+      left:0;
+      bottom:0;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      z-index: 1;
+    }
+    .navbar .mobile-tab{
+     width: 95%;
+     margin: 10px;
+     background:#fff;
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+     padding: 5px;
+     border-radius: 10px; 
+     box-shadow: rgb(38, 57, 77) -10px 30px 20px 0;
+    
+    
+    }
+    .navbar .mobile-tab li{
+      position: relative;
+      border-radius: 20px;
+      padding: 10px;
+      list-style-type: none;  
+  
+    }
+    .navbar .mobile-tab li a{
+      font-size: 1.5rem;
+      text-decoration: none;
+      color:#4169e1;
+      text-align: center;
+      text-decoration: none;
+    
+    
+    }
+    .navbar .mobile-tab li .tooltiptext {
+      visibility: hidden;
+      background-color:#000;
+      color: #fff;
+      text-align: center;
+      border-radius:20px;
+      padding:10px 30px;
+      
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      bottom: 120%;
+      margin-left: -65px;
+    }
+    
+    .navbar  .mobile-tab li:hover .tooltiptext {
+      visibility: visible;
+    
+    }
+    
+    .navbar .logo{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+}  
